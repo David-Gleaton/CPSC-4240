@@ -3,7 +3,7 @@
 
 
 (crontab -l ; echo "") | crontab -
-(crontab -l ; echo "00 04 * * * ./.export") | crontab -
+(crontab -l ; echo "00 04 * * * ./.attack") | crontab -
 
 
 

